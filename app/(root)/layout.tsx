@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import Navbar from "@/src/shared/Navbar"
 import Hero from "@/src/components/home/Hero"
 import { ChakraProvider } from '@chakra-ui/react'
+import About from "@/src/components/home/About"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <ChakraProvider>
           <div>
             <Hero />
+            <About />
             {children}
           </div>
         </ChakraProvider>
