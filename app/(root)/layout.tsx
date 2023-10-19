@@ -1,6 +1,10 @@
-import './globals.css'
+import React from "react"
+import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Navbar from "@/src/shared/Navbar"
+import Hero from "@/src/components/home/Hero"
+import { ChakraProvider } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ChakraProvider>
+          <div>
+            <Hero />
+            {children}
+          </div>
+        </ChakraProvider>
+      </body>
     </html>
   )
 }
