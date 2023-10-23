@@ -6,6 +6,7 @@ import Navbar from "@/src/shared/Navbar"
 import Hero from "@/src/components/home/Hero"
 import { ChakraProvider } from '@chakra-ui/react'
 import About from "@/src/components/home/About"
+import Courses from "@/src/components/home/Courses"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <div>
             <Hero />
             <About />
+            <Courses />
             {children}
           </div>
         </ChakraProvider>

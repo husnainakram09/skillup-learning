@@ -5,9 +5,10 @@
 :root {
   --text-color: #082a5e;
   --primary: #1363df;
+  --background-color: #f4f7fb;
 }
 
 body {
-  background-color: aliceblue;
+  background-color: var(--background-color);
   color: var(--text-color) !important;
 }
